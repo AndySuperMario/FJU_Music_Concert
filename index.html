@@ -13,7 +13,7 @@
 </body>
 </html> -->
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -37,6 +37,67 @@
 </head>
 
 <body>
+  <iframe src="MusicConcert_Angellu.pdf"></iframe>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>音樂會節目冊</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100vh;
+      border: none;
+    }
+
+    .mobile-link {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      iframe {
+        display: none;
+      }
+
+      .mobile-link {
+        display: block;
+        padding: 32px 20px;
+        font-size: 20px;
+        text-align: center;
+        line-height: 1.6;
+      }
+
+      .mobile-link a {
+        display: inline-block;
+        padding: 14px 22px;
+        background: #222;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mobile-link">
+    <p>手機或平板請點下方按鈕開啟節目冊</p>
+    <a href="MusicConcert_Angellu.pdf" target="_blank">
+      開啟音樂會節目冊 PDF
+    </a>
+  </div>
+
   <iframe src="MusicConcert_Angellu.pdf"></iframe>
 </body>
 </html>
